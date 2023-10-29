@@ -1,3 +1,15 @@
-.container {
+body {
     background-color: blue;
+}
+
+.row {
+    padding: 3em;
+}
+
+card {
+    border-radius: 0;
+}
+
+.rounded-4 {
+    border-radius: 0;
 }
