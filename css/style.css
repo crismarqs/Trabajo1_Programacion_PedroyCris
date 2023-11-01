@@ -1,9 +1,38 @@
-body {
-    background-color: blue;
+:root {
+    --azul: rgb(0, 13, 255);
+    --verde: rgb(9, 255, 0);
+    --tamanotitulo: 7em;
+    --tipotitulo: 'Borel', cursive;
+    --subtitulos: 'Roboto', sans-serif;
+    --cuerpo: 'VT323', monospace;
+    
 }
 
+body {
+    background-color: var(--azul);
+    padding: 5em;
+}
+
+.titulosiniciales {
+    /*padding: 5em;*/
+}
+
+h1 {
+    font-family: var(--tipotitulo);
+    color: var(--verde);
+    font-size: var(--tamanotitulo);
+    margin-bottom: 0em;
+    /* padding: 1.5em; */
+}
+
+h2 {
+    font-family: var(--cuerpo);
+    color: var(--verde);
+}
+
+/*PARA REFERIRME A LAS TARJETITAS*/
 .row {
-    padding: 3em;
+    /*padding: 3em;*/
 }
 
 /*
@@ -14,3 +43,37 @@ card {
 .rounded-4 {
     border-radius: 0;
 } */
+
+
+
+/*EL TEXTO QUE SE MUEVE */
+.textosconcaja2 {
+    margin-top: 30px;
+    padding: 0.2em 0;
+    font-size: 5em;
+    /*border-bottom: 2px solid;*/
+    /*color: var(--rojo);*/
+    overflow: hidden;
+    /*border-top: 2px solid;*/
+    background-color: var(--verde);
+}
+
+.textosconcaja2 > p {
+    width: 75em;
+    animation-duration: 30s;
+    animation-name: slidein;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: var(--cuerpo);
+    color: var(--azul);
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
