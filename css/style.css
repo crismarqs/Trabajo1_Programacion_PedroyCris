@@ -41,6 +41,38 @@ h2 {
     font-size: 3em;
 }
 
+/*LA GALERIA DE FOTOS SUMMER*/
+.galeriasummer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#galeria {
+    display: flex;
+    
+    width: 85%;
+    flex-wrap: wrap;
+}
+#galeria > figure {
+    flex: 30%;
+    padding: 4px;
+}
+
+#galeria > figure > img {
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+}
+
+#galeria > figure > img:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: none;
+}
+
+
 /*PARA REFERIRME A LAS TARJETITAS*/
 .row {
     /*padding: 3em;*/
