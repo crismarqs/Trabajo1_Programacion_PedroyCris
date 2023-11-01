@@ -30,6 +30,17 @@ h2 {
     color: var(--verde);
 }
 
+/*PRIMERA SECCIÓN SUMMER STORY*/
+.summer {
+    margin-top: 8em;
+}
+
+.summer > p {
+    font-family: var(--subtitulos);
+    color:var(--verde);
+    font-size: 3em;
+}
+
 /*PARA REFERIRME A LAS TARJETITAS*/
 .row {
     /*padding: 3em;*/
