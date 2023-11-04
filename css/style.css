@@ -59,6 +59,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8em;
 }
 
 #galeria {
@@ -129,4 +130,23 @@ card {
     to {
         transform: translateX(-100%);
     }
+}
+
+/*SECCIÓN DOS*/
+h3 {
+    font-family: var(--tipotitulo);
+    color: var(--verde);
+    font-size: 4em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+
+}
+
+.row {
+    background-color: rgb(238, 15, 242)4, 111);
+}
+
+.btn {
+    background-color: var(--verde);
+    margin-top: 1.5em;
 }
