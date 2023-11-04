@@ -83,23 +83,6 @@ h2 {
     filter: grayscale(100%);
 }
 
-
-/*PARA REFERIRME A LAS TARJETITAS*/
-.row {
-    /*padding: 3em;*/
-}
-
-/*
-card {
-    border-radius: 0;
-}
-
-.rounded-4 {
-    border-radius: 0;
-} */
-
-
-
 /*EL TEXTO QUE SE MUEVE */
 .textosconcaja2 {
     margin-top: 30px;
@@ -114,7 +97,7 @@ card {
 
 .textosconcaja2 > p {
     width: 75em;
-    animation-duration: 30s;
+    animation-duration: 35s;
     animation-name: slidein;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -149,4 +132,47 @@ h3 {
 .btn {
     background-color: var(--verde);
     margin-top: 1.5em;
+    font-size: 2em;
 }
+
+/*PARA REFERIRME A LAS TARJETITAS*/
+.row {
+    
+}
+
+/*
+card {
+    border-radius: 0;
+}
+
+.rounded-4 {
+    border-radius: 0;
+} */
+
+.row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5 {
+    margin-top: 4em;
+}
+
+.lh-1 {
+    color: var(--verde);
+    line-height: 1.5!important;
+    text-shadow: 2px 2px 5px var(--azul);
+}
+
+.pt-5 {
+    padding-top: 20rem!important;
+}
+
+section#video {
+    margin-top: 7em;
+}
+
+/*iframe {
+    margin-top: 5em;
+    margin-bottom: 5em;
+} */
+
+span {
+    color: var(--verde);
+}
+
