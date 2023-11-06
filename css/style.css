@@ -103,6 +103,7 @@ h2 {
     animation-iteration-count: infinite;
     font-family: var(--cuerpo);
     color: var(--azul);
+    margin-bottom: 0rem;
 }
 
 @keyframes slidein {

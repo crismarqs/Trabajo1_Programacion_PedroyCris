@@ -17,6 +17,10 @@
         
     }
 
+    .textosconcaja2 > p {
+        margin-bottom: 0rem;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -44,5 +48,14 @@
     #galeria > figure {
         flex: 100%;
     }
+
+    /*EL TEXTO QUE SE MUEVE */
+.textosconcaja2 {
+    font-size: 3em;
+}
+
+.textosconcaja2 > p {
+    margin-bottom: 0rem;
+}
 
 }
