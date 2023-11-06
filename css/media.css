@@ -1,0 +1,48 @@
+@media screen and (max-width: 850px) {
+
+    body {
+        background-color: var(--azul);
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #galeria {
+        width: 100%;
+    }
+    #galeria > figure {
+        flex: 50%;
+        
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        background-color: var(--azul);
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .summer {
+        margin-top: 5em;
+    }
+
+    .summer > p {
+        font-size: 2em;
+    }
+
+    #galeria {
+        width: 100%;
+    }
+    #galeria > figure {
+        flex: 100%;
+    }
+
+}
