@@ -1,0 +1,178 @@
+:root {
+    --azul: rgb(0, 13, 255);
+    --verde: rgb(9, 255, 0);
+    --tamanotitulo: 7em;
+    --tipotitulo: 'Borel', cursive;
+    --subtitulos: 'Roboto', sans-serif;
+    --cuerpo: 'VT323', monospace;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--azul);
+    padding: 5em;
+}
+
+.titulosiniciales {
+    /*padding: 5em;*/
+}
+
+h1 {
+    font-family: var(--tipotitulo);
+    color: var(--verde);
+    font-size: var(--tamanotitulo);
+    margin-bottom: 0em;
+    /* padding: 1.5em; */
+}
+
+h2 {
+    font-family: var(--cuerpo);
+    color: var(--verde);
+}
+
+/*PRIMERA SECCIÓN SUMMER STORY*/
+.summer {
+    margin-top: 8em;
+}
+
+.summer > p {
+    font-family: var(--subtitulos);
+    color:var(--verde);
+    font-size: 3em;
+}
+
+/*LA GALERIA DE FOTOS SUMMER*/
+
+.galeriasummer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+#galeria {
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+}
+#galeria > figure {
+    flex: 33%;
+    padding: 4px;
+}
+
+#galeria > figure > img {
+    filter: none;
+    transition-duration: 0.5s;
+}
+
+#galeria > figure > img:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+/*EL TEXTO QUE SE MUEVE */
+.textosconcaja2 {
+    margin-top: 30px;
+    padding: 0.2em 0;
+    font-size: 5em;
+    /*border-bottom: 2px solid;*/
+    /*color: var(--rojo);*/
+    overflow: hidden;
+    /*border-top: 2px solid;*/
+    background-color: var(--verde);
+}
+
+.textosconcaja2 > p {
+    width: 75em;
+    animation-duration: 35s;
+    animation-name: slidein;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: var(--cuerpo);
+    color: var(--azul);
+    margin-bottom: 0rem;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*SECCIÓN DOS*/
+h3 {
+    font-family: var(--tipotitulo);
+    color: var(--verde);
+    font-size: 4em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+
+}
+
+.row {
+    background-color: rgb(238, 15, 242)4, 111);
+}
+
+.btn {
+    background-color: var(--verde);
+    margin-top: 1.5em;
+    font-size: 2em;
+}
+
+/*PARA REFERIRME A LAS TARJETITAS*/
+.row {
+    
+}
+
+/*
+card {
+    border-radius: 0;
+}
+
+.rounded-4 {
+    border-radius: 0;
+} */
+
+.row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5 {
+    margin-top: 4em;
+}
+
+.lh-1 {
+    color: var(--verde);
+    line-height: 1.5!important;
+    text-shadow: 2px 2px 5px var(--azul);
+}
+
+.pt-5 {
+    padding-top: 20rem!important;
+}
+
+section#video {
+    margin-top: 7em;
+}
+
+/*iframe {
+    margin-top: 5em;
+    margin-bottom: 5em;
+} */
+
+span {
+    color: var(--verde);
+}
