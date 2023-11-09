@@ -1,0 +1,1256 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background: rgb(9, 255, 0);
+}
+
+
+nav {
+    background: rgb(9, 255, 0);
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 1; 
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 00px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.ctnli {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ctn1 {
+    display: flex;
+    margin-left: 5%;
+}
+
+.ctn2 {
+    margin-left: 57%;
+}
+
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(0, 13, 255);
+    font-size: 18px;
+    padding: 5px 13px;
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+li a.active,
+li a:hover {
+    background: rgb(0, 13, 255);
+    color: white;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/*Carrousel*/
+
+.section1 {
+    width: 90%;
+    margin: auto;
+}
+
+/*SECTION2*/
+
+.section2 {
+    width: 90%;
+    margin: auto;
+    z-index: 2;
+}
+
+.section2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 div img {
+    margin-top: -120px;
+    position: relative;
+}
+
+.section2 div p {
+    font-family: 'VT323', monospace;
+    color: rgb(0, 13, 255);
+    font-size: 60px;
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*SECTION3*/
+
+.section3 {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-frame {
+    display: flex;
+    width: 1500px; /* Ancho total de todas las imágenes */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-content {
+    display: flex;
+}
+
+.carousel-content img {
+    width: 500px;
+    height: auto;
+}
+
+.carousel-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 13, 255);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/*SECTION4*/
+
+.section4 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctn-texto {
+    width: 20%;
+    color: rgb(0, 13, 255);
+    font-size: 20px;
+    margin: auto;
+}
+
+.ctn-texto2 {
+    width: 40%;
+    color: rgb(0, 13, 255);
+    font-size: 20px;
+    margin: auto;
+
+}
+
+
+/*TEXTO EN MOVIMIENTO*/
+
+.section5 {
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.text-container {
+    position: relative;
+    white-space: nowrap;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgb(0, 13, 255);
+    color: rgb(9, 255, 0);
+    padding: 10px;
+    height: 100px;
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    animation: moveText 20s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+/*SECTION 6*/
+
+.section6 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-ctn {
+    border-top: 2px solid rgb(0, 13, 255);
+    border-bottom: 2px solid rgb(0, 13, 255);
+}
+
+.text-ctn a {
+    color: rgb(0, 13, 255);
+    height: 100px;
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+/*SECTION7*/
+
+.section7 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background: rgb(0, 13, 255);
+    margin-top: 80px;
+}
+
+.ctn-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.ctn-text h2 {
+    font-family: 'VT323', monospace;
+    font-size: 70px;
+    color: rgb(9, 255, 0);
+}
+
+.ctn-text p {
+    font-size: 40px;
+    color: rgb(9, 255, 0);
+    padding-top: 30px;
+}
+
+.ctn-text input {
+    color: rgb(0, 13, 255);
+    font-size: 20px;
+    padding: 5px 13px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    width: 200px;
+    margin-top: 40px;
+    border: none;
+}
+
+.ctn-text input:hover{
+    background-color: rgb(9, 255, 0);
+    color: rgb(0, 13, 255);
+}
+
+.ctn-img {
+    width: 50%;
+    margin: auto;
+    padding: 80px;
+}
+
+.ctn-img img {
+    width: 100%;
+}
+
+/*SECTION8*/
+
+.section8{
+    width: 100%;
+    margin: auto;
+}
+
+.section8 img{
+    width: 100%;
+}
+
+/*SECTION8*/
+
+.section8{
+    width: 100%;
+    margin: auto;
+    display: flex;
+   padding-top: 80px;
+    background:rgb(0, 13, 255) ;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctn-link{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.ctn-links{
+    display: flex;
+    width: 100%;
+    align-items: top;
+}
+
+.ctn-links ul{
+    color:rgb(9, 255, 0) ;
+   }
+
+
+.ctn-links ul li a{
+    align-items:top;
+    font-size: 30px;
+    color: rgb(9,255,0);
+    text-decoration: none;
+   }
+
+   .ctn-links ul li a:hover{
+    color: white;
+    font-size: 800;
+   }
+
+   .titulo{
+    font-size: 900;
+   }
+
+
+.suscribe{
+    color:rgb(9, 255, 0) ;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.suscribe h6{
+    font-size: 30px;
+}
+
+.texto-ctn{
+background: none;
+border: 2px solid white;
+border-radius: 20px;
+width: 300px;
+margin-top: 20px;
+}
+
+.btn-ctn{
+background: rgb(9, 255, 0);
+border-radius: 20px;
+padding: 3px;
+width: 150px;
+color: rgb(0, 13, 255);
+font-weight: 600;
+margin-top: 20px;
+}
+
+.btn-ctn:hover{
+    background-color: white;
+    color:  rgb(0, 13, 255);
+}
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background:  rgb(0, 13, 255);
+    border-top: 3px solid rgb(9, 255, 0);
+    height: 100px;
+    margin: auto;
+}
+
+.footer-span{
+width: 100%;
+margin: auto;
+margin-left: 7%;
+}
+
+.footer-span p{
+    color: rgb(9, 255, 0);
+    font-size: 15px;
+    margin: auto;
+}
+
+.footer-icon{
+    width: 100%;
+    margin: auto;
+    color: white;
+    margin-right: -69%;
+    font-size: 40px;
+}
+
+.footer-icon a:hover{
+    color:rgb(9, 255, 0) ;
+}
+
+/*NOSOTROS*/
+
+.fondo{
+    background:rgb(0, 13, 255)
+}
+.nav1{
+    background:rgb(0, 13, 255);
+}
+
+.active2{
+    background-color:rgb(9, 255, 0) ;
+}
+
+.active3:hover{
+    background-color:rgb(9, 255, 0) ;
+    color:rgb(0, 13, 255) ;
+}
+
+
+
+/*SECTION1N*/
+
+.section1-n{
+    width: 90%;
+    margin: auto;
+    background:rgb(0, 13, 255) ;
+    padding-bottom: 80px;
+}
+
+.section1-n div{
+    padding-top: 80px;
+    padding-left: 40px;
+}
+
+.section1-n div h2{
+font-family: 'Borel', cursive;
+color: rgb(9, 255, 0);
+font-size: 90px;
+}
+
+.section1-n div p{
+    font-family: 'VT323', monospace;
+    color: rgb(9, 255, 0);
+    font-size: 40px;
+    }
+
+    .ctn-card {
+        display: flex;
+        align-items: center;
+        justify-content: s;
+        width: 100%;
+        margin-left: -2%;
+    }
+
+    .img-border {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-border img {
+        border-radius: 40px;
+        max-width: 500px;
+        margin-bottom: 40px;
+        padding-right: 10px;
+    }
+    
+
+    .card-text {
+        flex: 2;
+        max-width: 500px;
+        background: rgb(9, 255, 0);
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 40px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items:center;
+
+    }
+    
+    h4 {
+        font-size: 50px;
+        color: rgb(0, 13, 255);
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    h5 {
+        font-size: 25px;
+        color: rgb(0, 13, 255);
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+    .card-btn {
+        border-radius: 30px;
+        border: none;
+        font-weight: 800;
+        background: rgb(0, 13, 255);
+        color: white;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        margin-left: -5px;
+    }
+
+    .card-btn:hover {
+        background: white;
+        color: rgb(0, 13, 255);
+    }
+
+/*SECTION2-N*/
+
+
+.section2-n{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background:rgb(9, 255, 0) ;
+}
+
+.reconocimiento-ctn{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-left: 8%;
+}
+
+.reconocimiento-ctn h2{
+    font-size: 60px;
+    color:rgb(0, 13, 255) ;
+    font-weight: 700;
+}
+
+.reconocimiento-ctn p{
+    font-size: 30px;
+    color:rgb(0, 13, 255) ;
+    font-family: 'VT323', monospace;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.reconocimento-btn{
+    font-size: 40px;
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    margin-top: 200px;
+    color:rgb(0, 13, 255);
+    font-weight: 500;
+    margin-left: 12%;
+}
+
+.reconocimento-btn:hover{
+    background:rgb(0, 13, 255);
+    color:white;
+}
+
+.img-circular{
+    width: 50%;
+}
+
+.img-circular img{
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*SECTION3-N*/
+
+.section3-n{
+    width: 100%;
+    margin: auto;
+    background-image: url("./img/fondo\ marcas_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.jpg");
+    height: 2300px;
+    background-size:cover;
+}
+
+.section3-n h2{
+    font-size: 70px;
+    font-family: 'VT323', monospace;
+    color: rgb(9, 255, 0);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 450px;
+    margin-left: 35%;
+    margin-bottom: 40px;
+}
+
+.section3-n ul{
+    font-size: 60px;
+    font-family: 'VT323', monospace;
+    color: rgb(9, 255, 0);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 800px;
+    margin-left: 15%;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.section3-n ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.section9{
+    width: 100%;
+    margin: auto;
+    display: flex;
+   padding-top: 80px;
+    background:rgb(0, 13, 255) ;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid rgb(9, 255, 0);
+}
+
+
+/*MEDIA TABLET */
+
+@media (max-width:768px){
+    
+    /*NAV*/
+    .logo {
+        height: 40px;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    .ctnli {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .ctn1 {
+        display: flex;
+        margin-left:0%;
+    }
+    
+    .ctn2 {
+        margin-left: 5%;
+    }
+
+    /*SECTION 6*/
+
+.text-ctn a {
+    margin-left: 180px; 
+}
+
+/*SECTION7*/
+
+.section7 {
+    flex-direction: column;
+}
+
+.ctn-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.ctn-text h2 {
+font-size: 50px;
+margin-right: 15%;
+}
+
+.ctn-text p {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-right: 15%;
+}
+
+.ctn-text input {
+    margin-right: 15%;
+}
+
+.ctn-text input:hover{
+    background-color: rgb(9, 255, 0);
+    color: rgb(0, 13, 255);
+}
+
+.ctn-img {
+    width: 100%;
+}
+
+/*SECTION8*/
+
+
+.section8{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ctn-link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+justify-content: center;
+margin: auto;
+}
+
+.ctn-links {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+   }
+
+
+.suscribe h6{
+    font-size: 30px;
+    width: 100%;
+    margin: auto;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.texto-ctn{
+background: none;
+border: 2px solid white;
+border-radius: 20px;
+width: 400px;
+margin-top: 40px;
+margin-left: 10%;
+}
+
+.btn-ctn{
+background: rgb(9, 255, 0);
+border-radius: 20px;
+padding: 3px;
+width: 150px;
+color: rgb(0, 13, 255);
+font-weight: 600;
+margin-top: 40px;
+margin-left: 45%;
+margin-bottom: 40px;
+}
+
+.footer-span{
+margin-left: 5%;
+}
+
+.footer-span p{
+    color: rgb(9, 255, 0);
+    font-size: 15px;
+    margin: auto;
+}
+
+.footer-icon{
+    margin-right: -49%;
+}
+
+/*NOSOTROS*/
+/*SECTION1N*/
+
+.section1-n{
+    padding-bottom: 40px;
+}
+
+.section1-n div h2{
+font-size: 80px;
+}
+
+.section1-n div p{
+    font-size: 30px;
+    }
+
+    .ctn-card {
+        flex-direction: column;
+        margin: auto;
+      margin-left: -5%;
+    }
+
+/*SECTION2-N*/
+
+.section2-n{
+    width: 100%;
+    flex-direction: column;
+}
+
+.reconocimiento-ctn{
+    width: 100%;
+    margin-left: 15%;
+}
+
+.reconocimiento-ctn p{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.reconocimento-btn{
+    margin-top: 40px;
+    margin-left: 15%;
+}
+
+.img-circular{
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 40px;
+
+}
+
+/*SECTION3-N*/
+
+.section3-n{
+    width: 100%;
+    margin: auto;
+    background-image: url("./img/fondo\ marcas-tablet_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.jpg");
+    height: 1000px;
+    background-size:cover;
+}
+
+.section3-n h2{
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.section3-n ul{
+    font-size: 30px;
+    padding-top: 370px;
+}
+
+}
+
+
+
+
+/*¨MEDIA MOBILE*/
+
+@media (max-width:425px) {
+
+    /*NAVBAR*/
+
+    nav {
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .logo{
+        margin-left: 50%;
+    }
+    
+
+    ul {
+        position: fixed;
+        width: 80%;
+        height: 500px;
+        background-color: rgb(0, 13, 255);
+        top: -100%;
+        margin-top: 100px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        top: 0;
+    }
+
+    .ctnli {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ctn1 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 100px;
+        position: fixed
+    }
+
+
+    .ctn2 {
+        margin: auto;
+        margin-top: 60%;
+    }
+
+      /*SECTION2*/
+
+    .section2 div p {
+        max-width: 80%;
+        font-size: 30px;
+    }
+
+     /*SECTION 4*/
+
+    .section4 {
+        flex-direction: column;
+    }
+
+    .ctn-texto {
+        width: 20%;
+        color: rgb(0, 13, 255);
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    
+    .ctn-texto2 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    
+    }
+
+    .text-ctn a {
+        font-size: 40px;
+    }
+
+    /*SECTION 6*/
+
+.text-ctn a {
+    font-size: 40px;
+    margin-left: 80px;
+}
+
+/*SECTION 7*/
+
+    .ctn-text {
+        width: 100%;
+        margin: auto;
+
+    }
+    
+    .ctn-text h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: -10%;
+    }
+    
+    .ctn-text p {
+        font-size: 20px;
+        margin-left: -10%;
+    }
+    
+    .ctn-text input {
+        margin-left: -10%;
+    }
+
+      /*SECTION8*/
+
+    .section8{
+        width: 100%;
+    }
+
+    .ctn-link{
+    margin-left: 15%;
+    }
+        
+    .suscribe{
+        width: 80%;
+        margin-left: 0%;
+
+    }
+
+    .suscribe h6{
+        margin: auto;
+        margin-bottom: 40px;
+        margin-left: -5%;
+    }
+
+    .input-sus .btn-ctn{
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    /*FOOTER*/
+    
+    
+    .footer{
+        flex-direction: column;
+        margin: auto;
+        background:rgb(0, 13, 255) ;
+       
+    }
+    
+    .footer-span{
+    width: 100%;
+    }
+    
+    .footer-span p{
+        color: rgb(9, 255, 0);
+        font-size: 15px;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+    
+    .footer-icon{
+        width: 100%;
+        font-size: 30px;
+        margin-left: 35%;
+        margin-top: 30px;
+        margin-bottom: 40%;
+        
+
+    }
+
+    .texto-ctn{
+    background: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+    
+    .btn-ctn{
+    background: rgb(9, 255, 0);
+    border-radius: 20px;
+    padding: 3px;
+    width: 150px;
+    color: rgb(0, 13, 255);
+    font-weight: 600;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+
+ /*NOSOTROS*/
+/*SECTION1N*/
+
+.section1-n h2{
+    margin-left: -10%;
+    font-size: 80px;
+}
+
+.section1-n p{
+    margin-left: -10%;
+    font-size: 80px;
+}
+
+.img-border {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -10%;
+}
+
+.img-border img {
+    border-radius: 40px;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
+
+.card-text {
+    flex: 2;
+    max-width: 350px;
+    background: rgb(9, 255, 0);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 40px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items:center;
+
+}
+
+h4 {
+    font-size: 50px;
+    color: rgb(0, 13, 255);
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+h5 {
+    font-size: 25px;
+    color: rgb(0, 13, 255);
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.card-btn {
+    border-radius: 30px;
+    border: none;
+    font-weight: 800;
+    background: rgb(0, 13, 255);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -5px;
+}
+
+/*SECTION2-N*/
+
+.section2-n{
+    width: 100%;
+    flex-direction: column;
+}
+
+.reconocimiento-ctn{
+    width: 100%;
+    margin-left: 7%;
+}
+
+.reconocimiento-ctn h2{
+    font-size: 40px;
+}
+
+.reconocimiento-ctn p{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-left: 7%;
+}
+
+.reconocimento-btn{
+    margin-top: 40px;
+    margin-left: 15%;
+    width: 250px;
+}
+
+.img-circular img{
+    width: 350px;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+/*SECTION3-N*/
+
+.section3-n{
+    width: 100%;
+    margin: auto;
+    background-image: url("./img/fondo\ marcas-mobile_Mesa\ de\ trabajo\ 1.jpg");
+    height: 500px;
+    background-size:cover;
+}
+
+.section3-n h2{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.section3-n ul{
+    font-size: 30px;
+}
+
+
+}
