@@ -488,7 +488,7 @@ margin-left: 7%;
 .section1-n div h2{
 font-family: 'Borel', cursive;
 color: rgb(9, 255, 0);
-font-size: 90px;
+font-size: 7em;
 }
 
 .section1-n div p{
@@ -907,7 +907,7 @@ font-size: 80px;
 
 
 
-/*¨MEDIA MOBILE*/
+/*MEDIA MOBILE*/
 
 @media (max-width:425px) {
 

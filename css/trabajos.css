@@ -18,7 +18,7 @@
 /* cositas del menú de arriba */
 nav {
     padding: 0em;
-    background: rgb(9, 255, 0);
+    background: var(--azul);
     height: 100px;
     width: 80%;
     margin: auto;
@@ -99,13 +99,29 @@ img {
     width: 100%;
 }
 
+
 body {
     background-color: var(--azul);
+    /* lo quito para hacer pruebas
+    padding: 5em; */
+}
+
+/*PONGO PADDING A CADA SECCIÓN*/
+
+.titulosiniciales {
     padding: 5em;
 }
 
-.titulosiniciales {
-    /*padding: 5em;*/
+section#proyectouno {
+    padding: 5em;
+}
+
+.row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5 {
+    padding: 5em;
+}
+
+section#video {
+    padding: 5em;
 }
 
 h1 {
@@ -255,4 +271,134 @@ section#video {
 
 span {
     color: var(--verde);
+}
+
+/*FOOTER MAQUETANDO*/
+
+/*EN PEDRO ES SECTION8*/
+
+.section8{
+    width: 100%;
+    margin: auto;
+}
+
+.section8 img{
+    width: 100%;
+}
+
+/*SECTION8*/
+
+.section8{
+    width: 100%;
+    margin: auto;
+    display: flex;
+   padding-top: 80px;
+    background:var(--verde);
+    align-items: center;
+    justify-content: center;
+}
+
+.ctn-link{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.ctn-links{
+    display: flex;
+    width: 100%;
+    align-items: top;
+}
+
+.ctn-links ul{
+    color:var(--azul) ;
+   }
+
+
+.ctn-links ul li a{
+    align-items:top;
+    font-size: 30px;
+    color: var(--azul);
+    text-decoration: none;
+   }
+
+   .ctn-links ul li a:hover{
+    color: white;
+    font-size: 800;
+   }
+
+   .titulo{
+    font-size: 900;
+   }
+
+
+.suscribe{
+    color:var(--azul) ;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.suscribe h6{
+    font-size: 30px;
+}
+
+.texto-ctn{
+background: none;
+border: 2px solid white;
+border-radius: 20px;
+width: 300px;
+margin-top: 20px;
+}
+
+.btn-ctn{
+background: var(--azul);
+border-radius: 20px;
+padding: 3px;
+width: 150px;
+color: var(--verde);
+font-weight: 600;
+margin-top: 20px;
+}
+
+.btn-ctn:hover{
+    background-color: white;
+    color:  var(--verde);
+}
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background:  var(--verde);
+    border-top: 3px solid var(--azul);
+    height: 100px;
+    margin: auto;
+}
+
+.footer-span{
+width: 100%;
+margin: auto;
+margin-left: 7%;
+}
+
+.footer-span p{
+    color: var(--azul);
+    font-size: 15px;
+    margin: auto;
+}
+
+.footer-icon{
+    width: 100%;
+    margin: auto;
+    color: white;
+    margin-right: -69%;
+    font-size: 40px;
+}
+
+.footer-icon a:hover{
+    color:var(--azul) ;
 }
