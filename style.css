@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
 
+:root {
+    --azul: rgb(0, 13, 255);
+    --verde: rgb(9, 255, 0);
+    --tamanotitulo: 7em;
+    --tipotitulo: 'Borel', cursive;
+    --subtitulos: 'Roboto', sans-serif;
+    --cuerpo: 'VT323', monospace;
+    
+}
 
 * {
     margin: 0;
@@ -208,38 +217,39 @@ li a:hover {
 }
 
 
-/*TEXTO EN MOVIMIENTO*/
-
-.section5 {
-    width: 100%;
-    margin: auto;
-    padding-top: 100px;
+/*EL TEXTO QUE SE MUEVE */
+.textosconcaja2 {
+    margin-top: 30px;
+    padding: 0.2em 0;
+    font-size: 5em;
+    /*border-bottom: 2px solid;*/
+    /*color: var(--rojo);*/
+    overflow: hidden;
+    /*border-top: 2px solid;*/
+    background-color: var(--azul);
 }
 
-.text-container {
-    position: relative;
-    white-space: nowrap;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background-color: rgb(0, 13, 255);
-    color: rgb(9, 255, 0);
-    padding: 10px;
-    height: 100px;
-    font-family: 'VT323', monospace;
-    font-size: 50px;
-    animation: moveText 20s linear infinite;
+.textosconcaja2 > p {
+    width: 75em;
+    animation-duration: 35s;
+    animation-name: slidein;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: var(--cuerpo);
+    color: var(--verde);
+    margin-bottom: 0rem;
 }
 
-@keyframes moveText {
-    0% {
-        right: 0;
+@keyframes slidein {
+    from {
+        transform: translateX(100%);
     }
 
-    100% {
-        right: 100%;
+    to {
+        transform: translateX(-100%);
     }
 }
+
 
 /*SECTION 6*/
 

@@ -222,9 +222,10 @@ h3 {
 
 }
 
+/*
 .row {
-    background-color: rgb(238, 15, 242)4, 111);
-}
+    background-color: rgb(238, 15, 242);
+} */
 
 .btn {
     background-color: var(--verde);
@@ -233,9 +234,11 @@ h3 {
 }
 
 /*PARA REFERIRME A LAS TARJETITAS*/
+
+/*
 .row {
     
-}
+} */
 
 /*
 card {
@@ -326,11 +329,11 @@ span {
 
    .ctn-links ul li a:hover{
     color: white;
-    font-size: 800;
+    font-size: 800px;
    }
 
    .titulo{
-    font-size: 900;
+    font-size: 900px;
    }
 
 
