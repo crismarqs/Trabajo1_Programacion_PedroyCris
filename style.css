@@ -22,6 +22,12 @@ body {
 }
 
 
+/*el nuevo menu*/
+a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.link-body-emphasis.text-decoration-none {
+    font-family: 'Borel';
+    color: white;
+}
+
 nav {
     background: rgb(9, 255, 0);
     height: 100px;

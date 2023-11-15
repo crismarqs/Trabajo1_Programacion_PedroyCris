@@ -15,7 +15,25 @@
     scroll-behavior: smooth;
 }
 
-/* cositas del menú de arriba */
+.container {
+    background-color: var(--verde);
+}
+
+span.fs-4 {
+    /*meter la tipo que quiero y eso a Meraki */
+    font-family: var(--tipotitulo);
+    color: var(--azul);
+    font-size: 3em;
+}
+
+ul.nav.nav-pills {
+    font-family: var(--subtitulos);
+    font-weight: bold;    
+}
+a.nav-link {
+    color: var(--azul);
+}
+/* cositas del menú de arriba 
 nav {
     padding: 0em;
     background: var(--azul);
@@ -91,7 +109,7 @@ li a:hover {
 
 #check {
     display: none;
-}
+} */
 
 /* hasta aquí del menú*/
 
@@ -231,6 +249,10 @@ h3 {
     background-color: var(--verde);
     margin-top: 1.5em;
     font-size: 2em;
+}
+
+.bg-primary {
+    padding: 10em;
 }
 
 /*PARA REFERIRME A LAS TARJETITAS*/

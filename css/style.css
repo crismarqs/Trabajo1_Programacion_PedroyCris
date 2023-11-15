@@ -12,7 +12,32 @@ body {
     background: rgb(9, 255, 0);
 }
 
+/*PARA EL NUEVO MENU*/
+.container {
+    background-color: var(--verde);
+}
 
+a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.link-body-emphasis.text-decoration-none {
+    font-family: 'Borel';
+    color: var(--azul);
+}
+
+/* span.fs-4 {
+    /*meter la tipo que quiero y eso a Meraki 
+    font-family: var(--tipotitulo);
+    color: var(--azul);
+    font-size: 3em;
+} */
+
+ul.nav.nav-pills {
+    font-family: var(--subtitulos);
+    font-weight: bold;    
+}
+a.nav-link {
+    color: var(--azul);
+}
+
+/* EL ANTIGUO MENU
 nav {
     background: rgb(9, 255, 0);
     height: 100px;
@@ -87,7 +112,7 @@ li a:hover {
 
 #check {
     display: none;
-}
+} */
 
 
 /*Carrousel*/

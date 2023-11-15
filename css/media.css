@@ -49,6 +49,9 @@
         flex: 100%;
     }
 
+    .bg-primary {
+        padding: 3em;
+    }
     /*EL TEXTO QUE SE MUEVE */
 .textosconcaja2 {
     font-size: 3em;
