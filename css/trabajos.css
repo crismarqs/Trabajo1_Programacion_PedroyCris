@@ -33,6 +33,16 @@ ul.nav.nav-pills {
 a.nav-link {
     color: var(--azul);
 }
+
+a.nav-link.active {
+    border-radius: 100px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--azul);
+}
+
 /* cositas del menú de arriba 
 nav {
     padding: 0em;
