@@ -361,15 +361,8 @@ li a:hover {
     width: 100%;
 }
 
-/*añadido cris de las tarjetas*/
-.bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: var(--azul);
-}
-
-
-
 /*footer NUEVO*/
+
 footer.py-5 {
     padding: 3em;
 }
@@ -739,6 +732,13 @@ font-size: 7em;
     border-top: 3px solid rgb(9, 255, 0);
 }
 
+@media (max-width:1250px) {
+    .ctn-card {
+        padding: 10em;
+    }
+    
+
+}
 
 /*MEDIA TABLET */
 
@@ -957,6 +957,10 @@ font-size: 80px;
 .section3-n ul{
     font-size: 30px;
     padding-top: 370px;
+}
+
+.ctn-card {
+    padding: 5em;
 }
 
 }
