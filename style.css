@@ -361,8 +361,15 @@ li a:hover {
     width: 100%;
 }
 
-/*footer NUEVO*/
+/*añadido cris de las tarjetas*/
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: var(--azul);
+}
 
+
+
+/*footer NUEVO*/
 footer.py-5 {
     padding: 3em;
 }
