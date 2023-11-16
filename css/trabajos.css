@@ -308,9 +308,7 @@ span {
     color: var(--verde);
 }
 
-/*FOOTER MAQUETANDO*/
-
-/*EN PEDRO ES SECTION8*/
+/*FOOTER MAQUETANDO, en pedro es section8
 
 .section8{
     width: 100%;
@@ -320,8 +318,6 @@ span {
 .section8 img{
     width: 100%;
 }
-
-/*SECTION8*/
 
 .section8{
     width: 100%;
@@ -402,7 +398,6 @@ margin-top: 20px;
     color:  var(--verde);
 }
 
-/*FOOTER*/
 
 .footer{
     width: 100%;
@@ -436,4 +431,28 @@ margin-left: 7%;
 
 .footer-icon a:hover{
     color:var(--azul) ;
+} */
+
+/*footer NUEVO*/
+
+footer.py-5 {
+    padding: 3em;
+}
+
+footer.py-5 {
+    background-color: var(--verde);
+}
+
+.row {
+    color: var(--azul);
+}
+
+p {
+    color: var(--azul);
+}
+
+button.btn.btn-primary {
+    border-radius: 100px;
+    color: var(--azul);
+    font-size: small;
 }

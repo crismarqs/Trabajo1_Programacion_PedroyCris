@@ -361,7 +361,30 @@ li a:hover {
     width: 100%;
 }
 
-/*SECTION8*/
+/*footer NUEVO*/
+
+footer.py-5 {
+    padding: 3em;
+}
+
+footer.py-5 {
+    background-color: var(--verde);
+}
+
+.row {
+    color: var(--azul);
+}
+
+p {
+    color: var(--azul);
+}
+
+button.btn.btn-primary {
+    border-radius: 100px;
+    color: var(--azul);
+    font-size: small;
+}
+/*SECTION8
 
 .section8{
     width: 100%;
@@ -440,9 +463,9 @@ margin-top: 20px;
 .btn-ctn:hover{
     background-color: white;
     color:  rgb(0, 13, 255);
-}
+} */
 
-/*FOOTER*/
+/*FOOTER
 
 .footer{
     width: 100%;
@@ -476,7 +499,7 @@ margin-left: 7%;
 
 .footer-icon a:hover{
     color:rgb(9, 255, 0) ;
-}
+} */
 
 /*NOSOTROS*/
 
